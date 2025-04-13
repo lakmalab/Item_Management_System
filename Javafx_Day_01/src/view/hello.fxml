@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="607.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/1686367161_en-idei-club-p-flat-background-dizain-krasivo-3.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010912" height="403.0" layoutX="-13.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="619.0" />
+      <Rectangle arcHeight="5.0" arcWidth="20.0" height="211.0" layoutX="345.0" layoutY="77.0" opacity="0.27" stroke="#846969" strokeType="INSIDE" strokeWidth="0.0" width="219.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7647058963775635" green="0.5568627715110779" blue="0.0313725508749485" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16203702986240387" green="0.1731237769126892" blue="0.18421052396297455" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="64.0" layoutY="57.0" text="Welcome " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="64.0" layoutY="163.0" prefHeight="152.0" prefWidth="219.0" text="Do all the good you can, by all the means you can, in all the ways you can, in all the places you can, at all the times you can, to all the people you can, as long as ever you can" textFill="WHITE" wrapText="true" />
+      <Label layoutX="426.0" layoutY="93.0" text="Login" textFill="#f6f6f6">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="47.0" layoutX="371.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/minimal-material.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="395.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnLogInOnAction" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #e67e22;" text="login" textFill="WHITE" />
+      <PasswordField fx:id="txtPassword" layoutX="384.0" layoutY="189.0" promptText="password" />
+      <TextField fx:id="txtEmail" layoutX="384.0" layoutY="138.0" promptText="email" />
+      <Label layoutX="64.0" layoutY="111.0" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="16.0" fitWidth="128.0" layoutX="76.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/toppng.com-social-media-logo-strip-918x151.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
